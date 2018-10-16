@@ -22,6 +22,7 @@ Route::get("fbapi", 'FBAPIController@index');
 Route::get("igapi", 'IGAPIController@index');
 
 Route::get("twapi", 'TWAPIController@index');
+Route::get("twapi/hashtag", 'TWAPIController@hashtag');
 
 
 

@@ -17,6 +17,11 @@ class IGAPIController
 
 		return view('igapi');
 	}
+
+	function index(){
+
+		return view('igapi-hashtag');
+	}
 }
 
  ?>
