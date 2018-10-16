@@ -18,7 +18,7 @@ class IGAPIController
 		return view('igapi');
 	}
 
-	function index(){
+	function hashtag(){
 
 		return view('igapi-hashtag');
 	}
