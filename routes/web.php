@@ -20,9 +20,9 @@ Route::get("/", 'MainController@index');
 Route::get("fbapi", 'FBAPIController@index');
 
 Route::get("igapi", 'IGAPIController@index');
+Route::get("igapi/hashtag", 'IGAPIController@hashtag');
 
 Route::get("twapi", 'TWAPIController@index');
-Route::get("twapi/hashtag", 'TWAPIController@hashtag');
 
 
 

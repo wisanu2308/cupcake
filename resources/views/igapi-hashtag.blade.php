@@ -8,8 +8,8 @@
 @section("htmlBody")
 
 <div class="btn-group" role="group" aria-label="...">
-  <a href="{{url('twapi')}}" type="button" class="btn btn-default">Instagram Feed</a>
-  <a href="{{url('twapi/hashtag')}}" type="button" class="btn btn-default">Instagram Hashtag</a>
+  <a href="{{url('igapi')}}" type="button" class="btn btn-default">Instagram Feed</a>
+  <a href="{{url('igapi/hashtag')}}" type="button" class="btn btn-default">Instagram Hashtag</a>
 </div>
 	
 <div class='sk-ww-instagram-hashtag-feed' data-embed-id='15136'></div>
