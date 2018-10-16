@@ -63,6 +63,8 @@
 <script type="text/javascript" src="{{asset("plugins/jquery/js/jquery.min.js")}}"></script>
 <script type="text/javascript" src="{{asset("plugins/bootstrap/js/bootstrap.js")}}"></script>
 
+@yield("script")
+
 </body>
 
 

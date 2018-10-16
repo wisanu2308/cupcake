@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get("/", 'MainController@index');
 
@@ -24,4 +24,6 @@ Route::get("igapi", 'IGAPIController@index');
 Route::get("twapi", 'TWAPIController@index');
 
 
-Route::get("menu_privileges/view", 'Privileges\MenuPrivilegesController@index');
+
+## EXAMPLE
+## Route::get("menu_privileges/view", 'Privileges\MenuPrivilegesController@index');
