@@ -15,7 +15,7 @@ class TWAPIController
 
 	function index(){
 
-		return view('twapi');
+		return view('tw_page.twapi');
 	}
 }
 

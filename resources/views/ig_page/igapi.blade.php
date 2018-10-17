@@ -12,8 +12,11 @@
   <a href="{{url('igapi/hashtag')}}" type="button" class="btn btn-default">Instagram Hashtag</a>
 </div>
 
-<div class='sk-instagram-feed' data-embed-id='15211'></div>
-<script src='https://www.sociablekit.com/app/embed/instagram-feed/widget.js'></script>
+
+
+
+
+
 
 @endsection
 
@@ -24,19 +27,6 @@
 	$(document).ready(function(){
 
 	});
-
-	// function getFeed(){
-
-	// 	$("#hashtag").hide();
-	// 	$("#feed").show();
-	// }
-
-	// function getHashtag(){
-
-	// 	$("#feed").hide();
-	// 	$("#hashtag").show();
-
-	// }
 
 </script>
 

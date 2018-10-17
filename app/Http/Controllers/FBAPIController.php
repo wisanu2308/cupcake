@@ -15,7 +15,7 @@ class FBAPIController
 
 	function index(){
 
-		return view('fbapi');
+		return view('fb_page.fbapi');
 	}
 }
 

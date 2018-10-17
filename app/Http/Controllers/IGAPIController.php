@@ -15,12 +15,12 @@ class IGAPIController
 
 	function index(){
 
-		return view('igapi');
+		return view('ig_page.igapi');
 	}
 
 	function hashtag(){
 
-		return view('igapi-hashtag');
+		return view('ig_page.igapi-hashtag');
 	}
 }
 

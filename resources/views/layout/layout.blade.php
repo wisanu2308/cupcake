@@ -62,6 +62,7 @@
 
 <script type="text/javascript" src="{{asset("plugins/jquery/js/jquery.min.js")}}"></script>
 <script type="text/javascript" src="{{asset("plugins/bootstrap/js/bootstrap.js")}}"></script>
+<script type="text/javascript" src="{{asset("plugins/instafeed/instafeed.min.js")}}"></script>
 
 @yield("script")
 
