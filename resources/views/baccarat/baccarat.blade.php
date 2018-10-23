@@ -27,8 +27,8 @@
 			<?php foreach ($col as $$value): ?>
 
 				<?php $index = $row_index.$col_index; ?>
-				<input type="hiddne" id="ref_index" name="ref_index" value="<?= $index ?>">
-				<td id="data<?=$index?>" style="line-height: 30px;" align="center"></td>
+				<input type="hidden" id="ref_index" name="ref_index" value="{{$index}}">
+				<td id="data<?=$index?>" style="line-height: 30px;" align="center">{{$index}}</td>
 				<?php $col_index++; ?>
 
 			<?php endforeach ?>
@@ -37,7 +37,6 @@
 	<?php endforeach ?>
 
 </table>
-
 <br>
 <br>
 
@@ -56,8 +55,18 @@
 	});
 
 	function select(select){
-
+		index = $('#ref_index').val();
+		if (select == 1) {
+			$('#data'+index).css("background-color", "blue");
+		}
+		if (select == 99) {
+			$('#data'+index).css("background-color", "green");
+		}
+		if (select == 2) {
+			$('#data'+index).css("background-color", "red");
+		}
 	}
+	
 
 
 
