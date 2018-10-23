@@ -24,6 +24,10 @@ Route::get("igapi/hashtag", 'IGAPIController@hashtag');
 
 Route::get("twapi", 'TWAPIController@index');
 
+Route::get("baccarat", 'BaccaratController@index');
+
+
+
 
 
 ## EXAMPLE
