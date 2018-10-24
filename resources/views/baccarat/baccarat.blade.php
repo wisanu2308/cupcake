@@ -13,30 +13,27 @@
 		"","","","","",
 		"","","","","",
 	];
+
+	$col_index = 1; 
+	$index = 1;
 ?>
 
+<?php foreach ($col as $key => $value): ?>
+	<table id="tableCol{{$col_index}}" border="1" style="display: inline-block;border-collapse: collapse;">
+		<?php foreach ($row as $key => $value): ?>
+			<tr>
+				<td id="data{{$index}}" align="center" width="40" style="line-height: 30px;">
+					{{$index}}
+				</td>
+			</tr>
+			<?php $index++; ?>
+		<?php endforeach ?>
+	</table>
+<?php endforeach ?>
+
+<input type="text" id="ref_index" name="ref_index" value="1">
 
 
-<table width="500" border="1" style="border-collapse: collapse;">
-
-	<?php $row_index = 1;  ?>
-	<?php foreach ($row as $value): ?>
-		<tr>
-
-			<?php $col_index = 1; ?>
-			<?php foreach ($col as $$value): ?>
-
-				<?php $index = $row_index.$col_index; ?>
-				<input type="hidden" id="ref_index" name="ref_index" value="{{$index}}">
-				<td id="data<?=$index?>" style="line-height: 30px;" align="center">{{$index}}</td>
-				<?php $col_index++; ?>
-
-			<?php endforeach ?>
-		</tr>
-		<?php $row_index++; ?>
-	<?php endforeach ?>
-
-</table>
 <br>
 <br>
 
@@ -65,8 +62,10 @@
 		if (select == 2) {
 			$('#data'+index).css("background-color", "red");
 		}
+
+		index++;
+		$('#ref_index').val(index);
 	}
-	
 
 
 
