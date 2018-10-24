@@ -25,7 +25,6 @@
 	$col_index = 1; 
 	$index = 1;
 ?>
-<center>
 
 <div id="check_status" style="display: block;">
 	ครั้งที่ : <input type="text" id="ref_index" name="ref_index" style="width: 30px;text-align: center;" value="1">
@@ -61,7 +60,6 @@
 <button class="btn btn-success" onclick="select(99)">GREEN</button>
 <button class="btn btn-danger" onclick="select(2)">RED</button>
 
-</center>
 @endsection
 
 
