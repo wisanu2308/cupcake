@@ -1,11 +1,19 @@
 @extends("layout.layout")
 
-@section("stlye")
+@section("style")
+	
+	<style type="text/css">
+		
+		.btn {
+			border-radius: 0px;
+		}
 
+	</style>
 @endsection
 
 
 @section("htmlBody")
+
 
 <?php 
 	$row = ["","","","","",""];
@@ -17,9 +25,19 @@
 	$col_index = 1; 
 	$index = 1;
 ?>
+<center>
+
+<div id="check_status" style="display: block;">
+	ครั้งที่ : <input type="text" id="ref_index" name="ref_index" style="width: 30px;text-align: center;" value="1">
+</div>
+
+<br>
+
+<div style="background-color: #D0D0D0;padding: 1em;">
 
 <?php foreach ($col as $key => $value): ?>
-	<table id="tableCol{{$col_index}}" border="1" style="display: inline-block;border-collapse: collapse;">
+	
+	<table align="center" id="tableCol{{$col_index}}" border="1" style="display: inline-block;border-collapse: collapse;border: 0px solid #00000030">
 		<?php foreach ($row as $key => $value): ?>
 			<tr>
 				<td id="data{{$index}}" align="center" width="40" style="line-height: 30px;">
@@ -31,16 +49,19 @@
 	</table>
 <?php endforeach ?>
 
-<input type="hidden" id="ref_index" name="ref_index" value="1">
+</div>
 
 
 <br>
 <br>
 
-<button onclick="select(1)">blue</button>
-<button onclick="select(99)">green</button>
-<button onclick="select(2)">red</button>
 
+	
+<button class="btn btn-info" onclick="select(1)">BLUE</button>
+<button class="btn btn-success" onclick="select(99)">GREEN</button>
+<button class="btn btn-danger" onclick="select(2)">RED</button>
+
+</center>
 @endsection
 
 
