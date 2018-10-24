@@ -23,7 +23,7 @@
 		<?php foreach ($row as $key => $value): ?>
 			<tr>
 				<td id="data{{$index}}" align="center" width="40" style="line-height: 30px;">
-					{{$index}}
+					&nbsp;<!-- {{$index}} -->
 				</td>
 			</tr>
 			<?php $index++; ?>
@@ -31,7 +31,7 @@
 	</table>
 <?php endforeach ?>
 
-<input type="text" id="ref_index" name="ref_index" value="1">
+<input type="hidden" id="ref_index" name="ref_index" value="1">
 
 
 <br>
@@ -54,13 +54,13 @@
 	function select(select){
 		index = $('#ref_index').val();
 		if (select == 1) {
-			$('#data'+index).css("background-color", "blue");
+			$('#data'+index).css("background-color", "#0000FF");
 		}
 		if (select == 99) {
-			$('#data'+index).css("background-color", "green");
+			$('#data'+index).css("background-color", "#00FF00");
 		}
 		if (select == 2) {
-			$('#data'+index).css("background-color", "red");
+			$('#data'+index).css("background-color", "#FF0000");
 		}
 
 		index++;
